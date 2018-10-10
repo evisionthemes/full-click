@@ -33,9 +33,11 @@
 	function page_padding_top() {
 		var header_height = $('header').height();
 
-		if($('body.home').hasClass('fullpage-enabled')) {
+		if($('body').hasClass('fullpage-enabled')) {
 			header_height += 30;
-			$('body.home .section .evt-img-overlay').css({ 'padding-top': header_height + 'px' });
+			setTimeout(function() {
+				$('body.home .section .evt-img-overlay').css({ 'padding-top': header_height + 'px' });
+			}, 500);
 		}
 	}
 

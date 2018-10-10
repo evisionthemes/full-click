@@ -314,27 +314,42 @@ body.fp-viewing-section1 #evt-scroll-top {
   display: none !important;
 }
 
+#evt-contact .evt-img-overlay,
+#evt-featured .evt-img-overlay {
+  padding-bottom: 40px;
+}
+
+body.home.fullpage-enabled #evt-contact .container {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
 #evt-testimonials .evt-testimonials-slider {
   background-color: transparent;
 }
 
-#menu-icon {
+body.home.fullpage-enabled.fp-viewing-section1 .site-branding {
+  visibility: visible;
+}
+body.home.fullpage-enabled header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover {
+  background-color: transparent;
+}
+body.home.fullpage-enabled header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span {
+  background-color: #fff;
+}
+body.home.fullpage-enabled #menu-icon {
   display: block;
 }
-
-nav#site-navigation {
+body.home.fullpage-enabled nav#site-navigation {
   display: none;
 }
-
 body.home.fullpage-enabled header.site-header#masthead {
   background-color: transparent;
 }
-
-#evt-banner .evt-banner-slider .evt-overlay:after, #evt-banner .evt-banner-slider .coin-slider:after {
+body.home.fullpage-enabled #evt-banner .evt-banner-slider .evt-overlay:after, body.home.fullpage-enabled #evt-banner .evt-banner-slider .coin-slider:after {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
-body #evt-buy-btn {
+body.home.fullpage-enabled #evt-buy-btn {
   margin-right: 50px;
 }
 
