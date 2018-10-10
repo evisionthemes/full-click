@@ -24,6 +24,10 @@
 	        e.preventDefault();
 	        $.fn.fullpage.moveSectionDown();
 	    });
+
+	    jQuery(document).on('click', '#evt-scroll-top', function(){
+			fullpage_api.moveTo(1);
+		});
 	}
 
 	function page_padding_top() {
@@ -47,7 +51,12 @@
 	});
 
 	$(document).ready(function() {
-		$('body.home').addClass('fullpage-enabled');
+		if($('body.home').hasClass('blog')) { 
+			// do nothing
+		}
+		else{
+			$('body.home').addClass('fullpage-enabled');
+		}
 
 		// fullpage on homepage only
 		if($('body.home').hasClass('fullpage-enabled')) {

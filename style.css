@@ -310,8 +310,32 @@ ul#fp-menu li a span.fp-menu-text:after {
   border-color: transparent transparent transparent #a031d8;
 }
 
+body.fp-viewing-section1 #evt-scroll-top {
+  display: none !important;
+}
+
 #evt-testimonials .evt-testimonials-slider {
   background-color: transparent;
+}
+
+#menu-icon {
+  display: block;
+}
+
+nav#site-navigation {
+  display: none;
+}
+
+body.home.fullpage-enabled header.site-header#masthead {
+  background-color: transparent;
+}
+
+#evt-banner .evt-banner-slider .evt-overlay:after, #evt-banner .evt-banner-slider .coin-slider:after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body #evt-buy-btn {
+  margin-right: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
