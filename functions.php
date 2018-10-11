@@ -1,9 +1,11 @@
 <?php
 /**
- *Recommended way to include parent theme styles.
- *(Please see http://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme)
- */  
-
+ * Full Click functions and definitions.
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package full-click
+ */
 
 function full_click_style() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap.css' );
@@ -27,7 +29,9 @@ function full_click_style() {
 add_action( 'wp_enqueue_scripts', 'full_click_style' );
 
 
-/**
- *Your code goes below
- */
-
+// theme name
+if ( ! function_exists ( 'business_click_theme_name' ) ) {
+	function business_click_theme_name() {
+		return esc_html__('Full Click','full-click');
+	}
+}
