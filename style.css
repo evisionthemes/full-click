@@ -32,7 +32,7 @@ body.home.fullpage-enabled ul#fp-menu {
   top: 50%;
   transform: translate(0, -50%);
   z-index: 9999;
-  margin-right: 45px;
+  margin-right: 30px;
 }
 body.home.fullpage-enabled ul#fp-menu li {
   list-style: none;
@@ -271,13 +271,20 @@ a:hover, .evt-item article .entry-title a:hover, a.readmore, .readmore, .breadcr
   padding-right: 0;
 }
 
-#evt-banner .slick-slider.evt-banner-slider .slick-arrow {
-  display: none;
-  visibility: hidden;
+@media (min-width: 768px) {
+  #evt-banner .slick-slider.evt-banner-slider .slick-arrow {
+    display: none;
+    visibility: hidden;
+  }
+  #evt-banner .evt-banner-image .evt-banner-caption {
+    text-align: left;
+    left: 16px;
+  }
 }
-#evt-banner .evt-banner-image .evt-banner-caption {
-  text-align: left;
-  left: 16px;
+@media (max-width: 479px) {
+  #evt-banner #evt-banner .nivoSlider .nivo-caption h1, #evt-banner #evt-banner .metaslider .caption-wrap .caption h1, #evt-banner .evt-banner-image .evt-banner-caption .evt-title {
+    font-size: 24px;
+  }
 }
 @media (min-width: 576px) {
   #evt-banner .evt-banner-image .evt-banner-caption {
@@ -323,6 +330,19 @@ body.home.fullpage-enabled.fp-viewing-section1, body.home.fullpage-enabled.fp-vi
   }
 }
 
+@media (min-width: 576px) {
+  .home.fullpage-enabled .container {
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .home.fullpage-enabled #evt-banner .evt-banner-image .evt-banner-caption {
+    left: 30px;
+  }
+  .home.fullpage-enabled header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler {
+    right: 15px;
+  }
+}
 #evt-testimonials .evt-testimonials-slider {
   background-color: transparent;
 }
@@ -347,6 +367,14 @@ body.home.fullpage-enabled nav#site-navigation {
   display: none;
 }
 body.home.fullpage-enabled header.site-header#masthead {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  body.home.fullpage-enabled header.site-header#masthead {
+    background-color: transparent;
+  }
+}
+body.home.fullpage-enabled.has-featured-slider.fp-viewing-section1 header.site-header#masthead {
   background-color: transparent;
 }
 body.home.fullpage-enabled #evt-banner .evt-banner-slider .evt-overlay:after, body.home.fullpage-enabled #evt-banner .evt-banner-slider .coin-slider:after {
@@ -488,6 +516,14 @@ a:hover, .evt-item article .entry-title a:hover, a.readmore, .readmore, .breadcr
   color: #a031d8;
 }
 
+.home.fullpage-enabled a.readmore, .home.fullpage-enabled .readmore {
+  color: #fff;
+}
+
+input[type="submit"], .wpcf7-form .wpcf7-submit {
+  color: #202020;
+}
+
 #evt-preloader {
   background-color: #a031d8;
 }
@@ -509,10 +545,6 @@ body.fullpage-enabled .site-description {
 }
 body.fullpage-enabled.fp-viewing-section1 .site-description {
   display: block;
-}
-
-body.home.admin-bar.fullpage-enabled .site-footer {
-  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
