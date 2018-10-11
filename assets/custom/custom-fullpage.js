@@ -34,7 +34,7 @@
 		var header_height = $('header').height();
 
 		if($('body').hasClass('fullpage-enabled')) {
-			header_height += 30;
+			// header_height += 30;
 			setTimeout(function() {
 				$('body.home .section .evt-img-overlay').css({ 'padding-top': header_height + 'px' });
 			}, 500);
