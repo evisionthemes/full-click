@@ -63,6 +63,11 @@ Author: Matthieu Aussaguel
 Source: https://github.com/matthieua/WOW
 License: Licensed MIT
 
+fullPage:
+Author: Alvaro Trigo
+Source: http://alvarotrigo.com/fullPage
+License: Licensed MIT
+
 Font Icons:
 * Font Awesome 5.0.13 by @fontawesome - http://fontawesome.io - @fontawesome 
 * License - https://fontawesome.com/license (Fonts: SIL OFL 1.1, Code: MIT License) 
