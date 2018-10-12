@@ -503,6 +503,7 @@ input[type="submit"]:hover,
   color: #fff;
 }
 
+.evt-featured-item-wrap .evt-featured-item .evt-featured-icon,
 ul#fp-menu li a span.fp-menu-text {
   color: #202020;
   font-weight: 600;
