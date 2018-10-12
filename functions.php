@@ -7,6 +7,24 @@
  * @package full-click
  */
 
+if(!function_exists('full_click_setup') ) :
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
+	 */
+	function full_click_setup() {
+
+		// Make theme available for translation.
+		load_theme_textdomain( 'full-click', get_stylesheet_directory() . '/languages' );
+	}
+
+endif;
+
+add_action( 'after_setup_theme', 'full_click_setup' );
+
 function full_click_style() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap.css' );
 
