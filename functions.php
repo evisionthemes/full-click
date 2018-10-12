@@ -35,3 +35,17 @@ if ( ! function_exists ( 'business_click_theme_name' ) ) {
 		return esc_html__('Full Click','full-click');
 	}
 }
+
+// default slider
+if ( ! function_exists ( 'business_click_default_slider_value' ) ) {
+	function business_click_default_slider_value() {
+		// displaying these defaults if uncategoried post is not present at first
+		$default_feature_slideer_array[]  =  array(
+          'business-click-feature-title'    => esc_html__('WHAT YOU SEE IS WHAT YOU GET', 'full-click'),
+          'business-click-feature-content'  => esc_html__('This is your dummy post. Please select A static page from Customizer - Homepage Settings - Homepage.', 'full-click'),
+          'business-click-feature-image'    => get_stylesheet_directory_uri() . '/assets/img/slider.jpg',
+          'business-click-feature-url'      => '#'
+        );
+		return $default_feature_slideer_array;
+	}
+}
