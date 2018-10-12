@@ -282,7 +282,7 @@ body.home.fullpage-enabled.has-featured-slider.fp-viewing-section1 header.site-h
     width: 500px;
     right: -500px;
   }
-  body.home.fullpage-enabled.evt-mbl-overlay-right .evt-mbl-menu.evt-menu-open, body.home.fullpage-enabled.evt-mbl-shift-right .evt-mbl-menu.evt-menu-open {
+  body.home.fullpage-enabled .evt-mbl-menu.evt-menu-open, body.home.fullpage-enabled.evt-mbl-overlay-right .evt-mbl-menu.evt-menu-open, body.home.fullpage-enabled.evt-mbl-shift-right .evt-mbl-menu.evt-menu-open {
     right: 0;
   }
   body.home.fullpage-enabled.evt-mbl-shift-right.evt-menu-open {
