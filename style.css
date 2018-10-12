@@ -366,12 +366,19 @@ a:hover, .evt-item article .entry-title a:hover, a.readmore, .readmore, .breadcr
 .css-gradient,
 .evt-banner-image.css-gradient {
   background: black;
-  background: -moz-linear-gradient(40deg, black 0%, #ffe501 100%);
-  background: -webkit-linear-gradient(40deg, black 0%, #ffe501 100%);
-  background: linear-gradient(40deg, black 0%, #ffe501 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffe501",GradientType=1);
+  background: -moz-linear-gradient(40deg, #9a8a00 0%, #ffe501 100%);
+  background: -webkit-linear-gradient(40deg, #9a8a00 0%, #ffe501 100%);
+  background: linear-gradient(40deg, #9a8a00 0%, #ffe501 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="darken($business_child_color, 20%)",endColorstr="#ffe501",GradientType=1);
   background-size: cover;
   background-position: center center;
+}
+
+#evt-preloader {
+  background-color: #ffe501;
+}
+#evt-preloader #status i {
+  color: #fff;
 }
 
 #evt-testimonials.dark-background {
@@ -527,10 +534,10 @@ body.fullpage-enabled.fp-viewing-section1 .site-description {
 .css-gradient,
 .evt-banner-image.css-gradient {
   background: black;
-  background: -moz-linear-gradient(40deg, black 0%, #a031d8 100%);
-  background: -webkit-linear-gradient(40deg, black 0%, #a031d8 100%);
-  background: linear-gradient(40deg, black 0%, #a031d8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#a031d8",GradientType=1);
+  background: -moz-linear-gradient(40deg, #45125e 0%, #a031d8 100%);
+  background: -webkit-linear-gradient(40deg, #45125e 0%, #a031d8 100%);
+  background: linear-gradient(40deg, #45125e 0%, #a031d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="darken($business_child_color_secondary, 30%)",endColorstr="#a031d8",GradientType=1);
   background-size: cover;
   background-position: center center;
 }
