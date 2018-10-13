@@ -123,11 +123,22 @@ body.home.fullpage-enabled {
   /* brands */
   /* fixing padding issue */
 }
+body.home.fullpage-enabled #evt-banner .evt-banner-slider .slick-slide .evt-banner-image {
+  max-height: 1080px;
+}
+body.home.fullpage-enabled .evt-featured-item-wrap .evt-featured-item .evt-featured-icon,
+body.home.fullpage-enabled .evt-thumb-holder .evt-thumb-hover a {
+  color: #202020;
+  font-weight: 600;
+}
 body.home.fullpage-enabled .evt-img-overlay {
   background-color: transparent !important;
 }
 body.home.fullpage-enabled .fp-tableCell {
   background-color: rgba(0, 0, 0, 0.4) !important;
+}
+body.home.fullpage-enabled #evt-partner .fp-tableCell {
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
 body.home.fullpage-enabled section.section {
   padding-top: 0 !important;
@@ -477,7 +488,6 @@ input[type="submit"]:hover,
   color: #fff;
 }
 
-.evt-featured-item-wrap .evt-featured-item .evt-featured-icon,
 ul#fp-menu li a span.fp-menu-text {
   color: #202020;
 }
