@@ -189,9 +189,6 @@ body.home.fullpage-enabled #evt-contact .container {
 body.home.fullpage-enabled header.site-header#masthead {
   background-color: rgba(0, 0, 0, 0.3);
 }
-body.home.fullpage-enabled.transparent-header.fp-viewing-slider header.site-header#masthead {
-  background-color: transparent;
-}
 
 @media (min-width: 576px) {
   .home.fullpage-enabled .container {
@@ -218,14 +215,6 @@ body.home.fullpage-enabled header.site-header .evt-header-wrap-nav .evt-menu-tog
 }
 body.home.fullpage-enabled header.site-header#masthead {
   background-color: rgba(0, 0, 0, 0.5);
-}
-@media (min-width: 768px) {
-  body.home.fullpage-enabled header.site-header#masthead {
-    background-color: transparent;
-  }
-}
-body.home.fullpage-enabled.has-featured-slider.fp-viewing-section1 header.site-header#masthead {
-  background-color: transparent;
 }
 
 @media (min-width: 992px) {
@@ -457,12 +446,15 @@ body.home.fullpage-enabled a#moveSectionDown i {
   color: #ffe501;
 }
 
-body.home.fullpage-enabled.fp-viewing-section1, body.home.fullpage-enabled.fp-viewing-section2, body.home.fullpage-enabled.fp-viewing-section3, body.home.fullpage-enabled.fp-viewing-section4, body.home.fullpage-enabled.fp-viewing-section5, body.home.fullpage-enabled.fp-viewing-section6, body.home.fullpage-enabled.fp-viewing-section7 {
-  /* fp-menu */
-}
 @media (min-width: 768px) {
+  body.home.fullpage-enabled.fp-viewing-section1, body.home.fullpage-enabled.fp-viewing-section2, body.home.fullpage-enabled.fp-viewing-section3, body.home.fullpage-enabled.fp-viewing-section4, body.home.fullpage-enabled.fp-viewing-section5, body.home.fullpage-enabled.fp-viewing-section6, body.home.fullpage-enabled.fp-viewing-section7 {
+    /* fp-menu */
+  }
   body.home.fullpage-enabled.fp-viewing-section1 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section2 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section3 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section4 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section5 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section6 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section7 ul#fp-menu {
     display: block !important;
+  }
+  body.home.fullpage-enabled.fp-viewing-section1 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section2 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section3 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section4 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section5 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section6 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section7 header.site-header#masthead {
+    background-color: transparent;
   }
 }
 
