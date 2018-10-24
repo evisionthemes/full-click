@@ -13,21 +13,11 @@ License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, e-commerce, theme-options, custom-colors, full-width-template, one-column, grid-layout, footer-widgets, portfolio
  */
-/* MIXINS */
-/*prifix */
 .img-cover {
   background-size: cover;
   background-position: center center;
 }
 
-body.home.fullpage-enabled {
-  /* fp-menu */
-  /* border and background */
-  /* fp-menu text */
-  /* active */
-  /*ul#fp-menu li:hover a span.fp-menu-indicator span,*/
-  /* move section down */
-}
 body.home.fullpage-enabled ul#fp-menu {
   position: fixed;
   right: 0;
@@ -117,14 +107,6 @@ body.fp-viewing-slider #evt-scroll-top {
   display: none !important;
 }
 
-body.home.fullpage-enabled {
-  /* fixing overlay */
-  /* fixing colors */
-  /* custom images */
-  /* blog */
-  /* brands */
-  /* fixing padding issue */
-}
 body.home.fullpage-enabled #evt-banner .evt-banner-slider .slick-slide .evt-banner-image {
   max-height: 1080px;
 }
@@ -460,9 +442,6 @@ body.home.fullpage-enabled a#moveSectionDown i {
 }
 
 @media (min-width: 768px) {
-  body.home.fullpage-enabled.fp-viewing-section1, body.home.fullpage-enabled.fp-viewing-section2, body.home.fullpage-enabled.fp-viewing-section3, body.home.fullpage-enabled.fp-viewing-section4, body.home.fullpage-enabled.fp-viewing-section5, body.home.fullpage-enabled.fp-viewing-section6, body.home.fullpage-enabled.fp-viewing-section7 {
-    /* fp-menu */
-  }
   body.home.fullpage-enabled.fp-viewing-section1 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section2 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section3 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section4 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section5 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section6 ul#fp-menu, body.home.fullpage-enabled.fp-viewing-section7 ul#fp-menu {
     display: block !important;
   }
@@ -533,7 +512,6 @@ body.fullpage-enabled.fp-viewing-section1 .site-description {
   display: block;
 }
 
-/* css3 gradient */
 .home.fullpage-enabled .section.css-gradient .fp-tableCell,
 .css-gradient,
 .evt-banner-image.css-gradient {
