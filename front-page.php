@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying home page.
- * @package business-click
+ * @package full-click
  */
 global $business_click_customizer_all_values;
 
@@ -12,18 +12,6 @@ if ( 'posts' == get_option( 'show_on_front' ) )
 }
     else
     {
-		/**
-		 * business_click_homepage hook
-		 * @since business-click 1.0.0
-		 *
-		 * @hooked business_click_homepage -  10
-		 * @sub_hooked business_click_homepage -  30
-         * @hooked busine_Craft_aboutus _page -16
-         * @hooked business_click_our_service -21
-		 */
-        
-
-
         /* fp menu for full page */
         echo '<ul id="fp-menu">';
             // if enabled
@@ -39,7 +27,7 @@ if ( 'posts' == get_option( 'show_on_front' ) )
             }
 
 
-            $call_to_action_select_page                 = $business_click_customizer_all_values['business-click-call-to-action-select-from-page'];
+            $call_to_action_select_page  = absint($business_click_customizer_all_values['business-click-call-to-action-select-from-page']);
 
             if( $business_click_customizer_all_values['business-click-enable-call-to-action']  ) {
                 if( $call_to_action_select_page > 0  ){
@@ -49,7 +37,7 @@ if ( 'posts' == get_option( 'show_on_front' ) )
             }
 
 
-            $about_us_page                      = absint($business_click_customizer_all_values['business-click-about-us-select-page'] );
+            $about_us_page = absint($business_click_customizer_all_values['business-click-about-us-select-page'] );
             if( $business_click_customizer_all_values['business-click-enable-about-us'] ) {
                 if ( $about_us_page > 0 ){
                     business_click_fp_menu_item('About', $i);

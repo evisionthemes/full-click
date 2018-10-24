@@ -158,7 +158,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-testimonial-select-form']				= 'form-category';
 		$defaults['business-click-testimonial-from-category']			= -1;
 		$defaults['business-click-testimonial-select-for-page']			= 0;
-		$defaults['business-click-testimonial-designation']				= '';
+		$defaults['business-click-testimonial-designation']				= esc_html__('CEO','full-click');
 		$defaults['business-click-testimonial-background-image']		= '';
 
 		//blog Section
