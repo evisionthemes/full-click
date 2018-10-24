@@ -53,12 +53,8 @@
 	});
 
 	$(document).ready(function() {
-		if($('body.home').hasClass('blog')) { 
-			// do nothing
-		}
-		else{
-			$('body.home').addClass('fullpage-enabled');
-		}
+		// if($('body.home').hasClass('blog')) { } else{ }
+		$('body.home').addClass('fullpage-enabled');
 
 		// fullpage on homepage only
 		if($('body.home').hasClass('fullpage-enabled')) {

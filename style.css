@@ -5,7 +5,9 @@ Author: eVision Themes
 Author URI: http://evisionthemes.com/
 Template: business-click
 Text Domain: full-click
-Description: Full Click is one page child theme of Corporate theme Business Click. This theme includes multiple sections like Featured slider, Services, Who we are, Portfolio, Call To Action, Review section, Blog, Contact section etc. The theme is completely responsive and your website will look perfect on all small to large devices. Within a single click, you can easily set up the demo website and edit your own content, images. Try our full click theme and set up your own website. Preview : https://demo.evisionthemes.com/business-click/multipage Support: https://evisionthemes.com/supports
+Description: Full Click is one page child theme of Corporate theme Business Click. This theme includes multiple sections like Featured slider, Services, Who we are, Portfolio, Call To Action, Review section, Blog, Contact section etc. The theme is completely responsive and your website will look perfect on all small to large devices. Within a single click, you can easily set up the demo website and edit your own content, images. Try our full click theme and set up your own website.
+Preview : https://demo.evisionthemes.com/business-click/multipage
+Support: https://evisionthemes.com/supports
 Version: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -105,6 +107,12 @@ body.fp-viewing-slider #evt-scroll-top {
   display: none !important;
 }
 
+body.home.fullpage-enabled.blog h2 {
+  color: #ffffff;
+}
+body.home.fullpage-enabled.blog #evt-banner {
+  margin-bottom: 0;
+}
 body.home.fullpage-enabled #evt-banner .evt-banner-slider .slick-slide .evt-banner-image {
   max-height: 1080px;
 }
@@ -444,6 +452,14 @@ body.home.fullpage-enabled a#moveSectionDown i {
     display: block !important;
   }
   body.home.fullpage-enabled.fp-viewing-section1 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section2 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section3 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section4 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section5 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section6 header.site-header#masthead, body.home.fullpage-enabled.fp-viewing-section7 header.site-header#masthead {
+    background-color: transparent;
+  }
+}
+@media (min-width: 768px) {
+  body.home.fullpage-enabled.blog ul#fp-menu {
+    display: none !important;
+  }
+  body.home.fullpage-enabled.blog header.site-header#masthead {
     background-color: transparent;
   }
 }
