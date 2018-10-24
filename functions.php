@@ -199,3 +199,16 @@ if(!function_exists('business_click_defauts_value') ) :
 		return $defaults;
 	}
 endif; 
+
+
+/* fp menu */
+function business_click_fp_menu_item($title, $i) {
+	?>
+	<li data-menuanchor="section<?php echo esc_attr($i);?>">
+        <a href="#section<?php echo esc_attr($i);?>">
+            <span class="fp-menu-text"><?php echo esc_html($title);?></span>
+            <span class="fp-menu-indicator"><span></span></span>
+        </a>
+    </li>
+	<?php
+}
