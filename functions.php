@@ -134,7 +134,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-feature-select-form']  				= 'form-category';
 		$defaults['business-click-feature-from-category']  				= -1;
 		$defaults['business-click-feature-from-page']  					= 0;
-		$defaults['business-click-feature-page-icon']  					= '';
+		$defaults['business-click-feature-page-icon']  					= 'fa-wrench';
 		$defaults['business-click-feature-button-text']  				= '';
 		$defaults['business-click-feature-background-image']  			= '';
 
