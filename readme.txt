@@ -19,7 +19,9 @@ Business Click is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Full Click theme is a child theme of Business Click.
+Full Click is one page child theme of Corporate theme Business Click. This theme includes multiple sections like Featured slider, Services, Who we are, Portfolio, Call To Action, Review section, Blog, Contact section etc. The theme is completely responsive and your website will look perfect on all small to large devices. Within a single click, you can easily set up the demo website and edit your own content, images. Try our full click theme and set up your own website.
+Preview : https://demo.evisionthemes.com/business-click/multipage
+Support: https://evisionthemes.com/supports
 
 
 == Installation ==

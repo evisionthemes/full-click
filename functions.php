@@ -7,24 +7,6 @@
  * @package full-click
  */
 
-if(!function_exists('full_click_setup') ) :
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
-	 */
-	function full_click_setup() {
-
-		// Make theme available for translation.
-		load_theme_textdomain( 'full-click', get_stylesheet_directory() . '/languages' );
-	}
-
-endif;
-
-add_action( 'after_setup_theme', 'full_click_setup' );
-
 function full_click_style() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap.css' );
 
@@ -45,6 +27,24 @@ function full_click_style() {
 	wp_enqueue_style( 'full-click-style',get_stylesheet_directory_uri() . '/style.css',array('business-click-style'));
 }
 add_action( 'wp_enqueue_scripts', 'full_click_style' );
+
+if(!function_exists('full_click_setup') ) :
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
+	 */
+	function full_click_setup() {
+
+		// Make theme available for translation.
+		load_theme_textdomain( 'full-click', get_stylesheet_directory() . '/languages' );
+	}
+
+endif;
+
+add_action( 'after_setup_theme', 'full_click_setup' );
 
 
 // theme name
@@ -86,7 +86,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults = array();
 
 		//top bar
-		$defaults['business-click-enbale-top-bar-header']  				= 0;//full-click
+		$defaults['business-click-enbale-top-bar-header']  				= 0; //full-click
 		$defaults['business-click-top-bar-phone']          				= esc_html__('+(123)-456789','full-click');
 		$defaults['bussiness-click-top-bar-email']         				= esc_html__('evisionthemes@gmail.com','full-click');
 		$defaults['bussiness-click-top-bar-location']      				= esc_html__('Kathmandu, Nepal','full-click');
@@ -94,8 +94,8 @@ if(!function_exists('business_click_defauts_value') ) :
 
 		// header Section
 		$defaults['business-click-enable-extra-button']					= 1;
-		$defaults['business-click-text-extra-button-text']				= esc_html__('','full-click');//full-click
-		$defaults['business-click-link-extra-button']					= 'https://demo.evisionthemes.com/business-click/multipage/';
+		$defaults['business-click-text-extra-button-text']				= ''; //full-click
+		$defaults['business-click-link-extra-button']					= esc_url('https://demo.evisionthemes.com/business-click/multipage/');
 		$defaults['business-click-enable-transparent-header']		    = 1;
 
 
