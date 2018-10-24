@@ -18,7 +18,7 @@ if(has_post_thumbnail()){
 	$gradientClass = '';
 }
 ?>
-<section class="section img-cover <?php echo esc_html__($gradientClass);?>" style="<?php if($url != ''):?>background-image: url(<?php echo esc_url($url);?>);<?php endif;?>">
+<section class="section img-cover <?php echo esc_html($gradientClass);?>" style="<?php if($url != ''):?>background-image: url(<?php echo esc_url($url);?>);<?php endif;?>">
 	<div class="evt-img-overlay">
 		<div class="container">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
