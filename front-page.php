@@ -107,7 +107,5 @@ if ( 'posts' == get_option( 'show_on_front' ) )
                 </div>
             </section>
         <?php }
-
-        
     }
 get_footer();
