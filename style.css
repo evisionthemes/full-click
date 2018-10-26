@@ -445,6 +445,11 @@ body.blog:not(.home) .section.img-cover {
   background-color: transparent;
 }
 
+/* fixing hamberger icon, if no site title presents */
+.evt-header-row {
+  min-height: 80px;
+}
+
 .evt-mbl-menu a:hover,
 .evt-mbl-menu li:hover a,
 .evt-mbl-menu li.current-menu-item a {
