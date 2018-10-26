@@ -542,4 +542,8 @@ body.fullpage-enabled.fp-viewing-section1 .site-description {
   background-position: center center;
 }
 
+body.custom-background .container {
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */

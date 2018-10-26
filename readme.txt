@@ -84,6 +84,7 @@ Note:
 
 ## 1.0.1 ##
 * Background image removed from Blog Archive.
+* Fixed: Background issue in homepage when Custom Background Image added.
 
 ## 1.0.0 ##
 * Initial release.
