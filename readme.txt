@@ -5,7 +5,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 Requires at least: 4.5
 Tested up to: 4.9.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -81,6 +81,9 @@ Note:
 1) https://pixabay.com/en/girl-kayak-canoe-kayaking-paddle-1561989/
 
 == Changelog ==
+
+## 1.0.2 ##
+* Fixed: Maximum height for logo added.
 
 ## 1.0.1 ##
 * Background image removed from Blog Archive.

@@ -8,7 +8,7 @@ Text Domain: full-click
 Description: Full Click is one page child theme of Corporate theme Business Click. This theme includes multiple sections like Featured slider, Services, Who we are, Portfolio, Call To Action, Review section, Blog, Contact section etc. The theme is completely responsive and your website will look perfect on all small to large devices. Within a single click, you can easily set up the demo website and edit your own content, images. Try our full click theme and set up your own website.
 Preview : https://demo.evisionthemes.com/business-click/multipage
 Support: https://evisionthemes.com/supports
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, e-commerce, theme-options, custom-colors, full-width-template, one-column, grid-layout, footer-widgets, portfolio
@@ -443,6 +443,12 @@ body.blog:not(.home) .section.img-cover {
 
 #evt-testimonials .evt-testimonials-slider {
   background-color: transparent;
+}
+
+/* fixing logo height issue */
+img.custom-logo {
+  max-height: 100px;
+  width: auto;
 }
 
 /* fixing hamberger icon, if no site title presents */
